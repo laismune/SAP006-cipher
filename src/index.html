@@ -5,10 +5,42 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div id="root">
-    <h1>Hello world!</h1>
+
+ <!-- MENU -->
+  <header class="menuHeader">
+    <nav  class="menuNav">
+      <ul class="menuUL">
+        <li id="menuLI"><a href="index.html"   id="menuA">Início</a></li>
+        <li id="menuLI"><a href="sobre.html"    id="menuA">Sobre o Madeira Legal</a></li>
+        <li id="menuLI"><a href="dof.html"      id="menuA">O que é DOF</a></li>
+        <li id="menuLI"><a href="servicos.html" id="menuA">Serviços</a></li>
+        <li id="menuLI"><a href="contato.html"  id="menuA">Contato</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Títulos -->
+  <div class="tit"> 
+    <h1 id="bemVindo"> Seja bem vindo (a) ao Madeira Legal</h1>
+    <h1 id="portal"> O portal antifraude de DOF</h1>
   </div>
+  <br>
+  <h2> Selecione o serviço desejado</h2>
+
+<!-- Botões -->
+  <div class="botoes"> 
+
+    <form action="cripto.html">
+      <input type="submit" value="Criptografar DOF" id ="cripto" />
+    </form>
+
+    <form action="decpto.html">
+      <input type="submit" value="Descriptografar DOF" id ="decpto" />
+    </form>
+  </div> 
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
