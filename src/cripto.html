@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Madeira Legal</title>
-  <script src="index.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -23,16 +22,13 @@
   </header>
 
   <h1> cripto</h1>
-  <!-- Box para mensagem a ser ENCRIPTAR -->
-  <form method="get">  
-    <input type="text" id="string" placeholder="message"/>
-    <input type="number" id="offset" placeholder="offset"/>
-    <!-- Botão de envio -->
-    <button type="button" value="Submit" onclick="encode()">ENCRIPTAR</button>  
-  </form> 
-  <p id="code"> </p> 
-
-
+  <input type = "text" id = "messageToEncode" >
+  <input type = "number" id = "offset">
+  <input type="button" id="botao" value="encode"> -->
+  <div id="encodedMessage">resultado</div>
   
+  <script src="index.js" type="module"></script>
+  <script src="cipher.js" type="module"></script>
+
 </body>
 </html>

@@ -1,11 +1,26 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+//ENCODE
 
-let string = ""
-let offset = ""
+let offset = document.getElementById("offset");
+let string = document.getElementById("messageToEncode");
+let botao = document.getElementById("botao");
+let valorOffset = ""
+let valorString = ""
 
-string = document.getElementById("string").value;
-offset = document.getElementById("offset").value;
+offset.addEventListener("keyup", function (event) {
+    valorOffset = event.target.value
+    console.log(valorOffset)
+})
 
-document.write(cipher.encode(string,offset).value)
+string.addEventListener("keyup", function (event) {
+    valorString = event.target.value
+    console.log(valorString)
+})
+
+function encodeButton () {
+    let cipherFunction = cipher.encode(valorOffset, valorString);
+    encodedMessage.innerHTML = cipherFunction;
+ }
+
+botao.addEventListener("click", encodeButton)
