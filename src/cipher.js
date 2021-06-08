@@ -150,8 +150,8 @@ const cipher = {
 		}
 	}
   return messageDecoded	
-  }
-  };
+  },
+};
   
   export default cipher;
   

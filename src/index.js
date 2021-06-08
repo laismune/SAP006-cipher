@@ -1,7 +1,6 @@
 import cipher from './cipher.js';
 
 //ENCODE
-
 let offset = document.getElementById("offset");
 let string = document.getElementById("messageToEncode");
 let botao = document.getElementById("botao");
@@ -24,3 +23,4 @@ function encodeButton () {
  }
 
 botao.addEventListener("click", encodeButton)
+
