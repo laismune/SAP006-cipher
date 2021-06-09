@@ -66,7 +66,7 @@ const cipher = {
 					messageEncoded += newLetter;
 				}
 			} else {
-				let newAlphabetIndex = codAsc;
+				let newAlphabetIndex = codeAsc;
 				let newLetter = String.fromCharCode(newAlphabetIndex);
 				messageEncoded += newLetter
 			}
@@ -123,7 +123,7 @@ const cipher = {
 					messageDecoded += newLetter;
 				}
 			} else {
-				let newAlphabetIndex = codAsc;
+				let newAlphabetIndex = codeAsc;
 				let newLetter = String.fromCharCode(newAlphabetIndex);
 				messageDecoded += newLetter
 			}
@@ -150,7 +150,7 @@ const cipher = {
 		}
 	}
   return messageDecoded	
-  },
+  }
 };
   
   export default cipher;

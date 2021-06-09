@@ -4,43 +4,45 @@
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+  
+  
  <!-- MENU -->
-  <header class="menuHeader">
-    <nav  class="menuNav">
-      <ul class="menuUL">
-        <li id="menuLI"><a href="index.html"    id="menuA">Início</a></li>
-        <li id="menuLI"><a href="sobre.html"    id="menuA">Sobre o Madeira Legal</a></li>
-        <li id="menuLI"><a href="dof.html"      id="menuA">O que é DOF</a></li>
-        <li id="menuLI"><a href="servicos.html" id="menuA">Serviços</a></li>
-        <li id="menuLI"><a href="contato.html"  id="menuA">Contato</a> </li>
-      </ul>
-    </nav>
-  </header>
 
- <!-- Títulos -->
+  <ul class="menuUL">
+    <li id="menuLI"><a href="index.html"    id="menuA">Início</a></li>
+    <li id="menuLI"><a href="sobre.html"    id="menuA">Sobre o Madeira Legal</a></li>
+    <li id="menuLI"><a href="dof.html"      id="menuA">O que é DOF</a></li>
+    <li id="menuLI"><a href="servicos.html" id="menuA">Serviços</a></li>
+    <li id="menuLI"><a href="contato.html"  id="menuA">Contato</a> </li>
+    <img src="treeLogo.png"  id="logo" >
+  </ul>
+
+
   <div class="tit"> 
-    <h1 id="bemVindo"> Seja bem vindo (a) ao Madeira Legal</h1>
-    <h1 id="portal"> O portal antifraude de DOF</h1>
+    <h1 id="portal"> Portal antifraude <br> de DOF</h1>
   </div>
-  <br>
-  <h2> Selecione o serviço desejado</h2>
 
-<!-- Botões -->
-  <div class="botoes"> 
+    <h2> Selecione o serviço desejado</h2>
 
-    <form action="cripto.html">
-      <input type="submit" value="Criptografar DOF" id ="cripto" />
-    </form>
+    <div class="botoes"> 
+      <form action="cripto.html">
+        <input type="submit" value="Criptografar CDOF" id ="cripto" />
+      </form>
+      <form action="decpto.html">
+        <input type="submit" value="Descriptografar CDOF" id ="decpto" />
+      </form>
+    </div> 
+    <footer id=footerPages>
+      Copyright ©2021 MadeiraLegal    -
+      “A natureza pode suprir todas as necessidades do homem, menos a sua ganância.” <i> (Mahatma gandhi) </i>
+    </footer>    
 
-    <form action="decpto.html">
-      <input type="submit" value="Descriptografar DOF" id ="decpto" />
-    </form>
-  </div> 
-
-  <script src="index.js" type="module"></script>
+  <script src="index.js" type="module"></script> 
 </body>
 </html>
