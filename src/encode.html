@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Madeira Legal</title>
+  <title>Madeira Legal - Criptografia </title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body id=bodyEncode>
+<body id="bodyEncode">
 
  <!-- MENU -->
   <ul class="menuUL">
@@ -17,6 +17,7 @@
     <li id="menuLI"><a href="servicos.html" id="menuA">Serviços</a></li>
     <li id="menuLI"><a href="contato.html"  id="menuA">Contato</a> </li>
     <img src="treeLogo.png"  id="logo" >
+    <img src="ibama.png"  id="logoIbama" >
   </ul>
 
   <h1 id = "EncodeTit"> Criptografia de <br> Código DOF</h1>
@@ -36,9 +37,11 @@
   <br>
 
   <div id="encodedMessageIndication"> 
-    <p> O código DOF criptografado será impresso no canto superior direito da tela.</p>
+    <p> Código DOF criptografado:</p>
   </div>     
   <div id="encodedMessage"></div> 
+
+  <p id= "sizeCodEncode"> O código DOF pode variar de 10 à 25 caracteres.</p>
   
   <script src="index.js" type="module"></script>
   <script src="cipher.js" type="module"></script>
