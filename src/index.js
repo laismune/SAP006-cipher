@@ -1,9 +1,9 @@
 import cipher from './cipher.js';
 
 //ENCODE
-let offset = document.getElementById("offset");
+let offset = document.getElementById("offsetToEncode");
 let string = document.getElementById("messageToEncode");
-let botao = document.getElementById("botao");
+let botao = document.getElementById("botaoToEncode");
 let valorOffset = ""
 let valorString = ""
 

@@ -1,12 +1,3 @@
-body {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
-    background-image:    url(monkeyOnTheTree.jpeg);
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
-
 /* Menu de navegação: cores de background e hover*/
 .menuUL{
     background-color: white;
@@ -16,25 +7,21 @@ body {
     font-family:'Montserrat', sans-serif;
     margin-bottom: 400px;
 }
-
 #menuLI {
     display: inline-block;
     padding: 20px 40px 20px 40px;
     margin: 0;
 }
-
 /* Exclusão de blue underline */
 #menuA {
     text-decoration: none;
     color: #001a1a  
 } 
-
 #menuLI:hover {
     background-color: #9fdfbf;
     cursor:pointer;
     color: #001a1a;
 }
-
 #logo {
     height: 50px;
     display: inline-block;
@@ -44,7 +31,15 @@ body {
     margin-bottom: -23px;
 }
 
-
+/* INDEX.HTML*/
+#bodyIndex {
+    margin: 0px;
+    font-family:'Montserrat', sans-serif;
+    background-image:    url(monkeyOnTheTree.jpeg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
 /* Títulos página principal */
 .tit {
     position: absolute;
@@ -64,7 +59,6 @@ h2 {
     color: #ccff66;
     background: rgba(0,0,0,.2);
 }
-
 /* Botões de criptografar e descriptografar */
 #cripto {
     position: absolute;
@@ -88,19 +82,17 @@ h2 {
     border-radius: 12px;
     border-color: #ccffe6;
 }
-
 #cripto:hover {
     background-color: #9fdfbf;
     cursor:pointer;
     color: #001a1a;
 }
-
 #decpto:hover {
     background-color: #9fdfbf;
     cursor:pointer;
     color: #001a1a;
 }
-
+/*Rodapé */
 #footerPages {
     position: absolute;
     bottom: 0px;
@@ -112,4 +104,93 @@ h2 {
     height: 20px;    
     background: rgba(0,0,0,.2);
     padding: 5px 0px 0px 0px;
+}
+
+/* ENCODE.HTML */
+#bodyEncode {
+    margin: 0px;
+    font-family:'Montserrat', sans-serif;
+    background-image:    url(encode.jpeg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    margin-bottom: 80px;
+}
+
+#EncodeTit {
+    position: absolute;
+    margin-left: 20px;
+    font-size:60px;
+    font-family:'Montserrat', sans-serif;
+    color: #001a1a;
+    top: 70px;
+}
+
+#conditionsToEncode {
+    position: absolute;
+    left: 20px;
+    top: 270px;
+
+}
+
+#messageToEncode {
+    border: 1px solid #001a1a;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    height: 30px;
+    width: 500px;
+    border-radius: 4px;
+    position: absolute;
+    left: 20px;
+    bottom: 140px;
+
+}
+
+#offsetToEncode {
+    border: 1px solid #001a1a;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    height: 30px;
+    width: 300px;
+    border-radius: 4px;
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+
+}
+
+#encodedMessageIndication{
+    bottom: 18px;
+    position: absolute;
+    left: 20px;
+    color:white;
+    font-size: 10pt;
+
+}
+
+#encodedMessage{
+    top: 100px;
+    right: 20px;
+    position: absolute;
+    color:#262626;
+}
+
+
+#botaoToEncode {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    font-family:'Montserrat', sans-serif;
+    font-size:25px;
+    padding: 5px 30px 5px 30px;
+    background-color: #001a1a;
+    color: DarkSeaGreen;
+    border-radius: 12px;
+    border-color: #001a1a;
+
+
 }
