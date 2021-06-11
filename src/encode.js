@@ -4,16 +4,17 @@ import cipher from './cipher.js';
 let offset = document.getElementById("offsetToEncode");
 let string = document.getElementById("messageToEncode");
 let botao = document.getElementById("botaoToEncode");
+let encodedMessage = document.getElementById("encodedMessage")
 let valorOffset = ""
 let valorString = ""
 
 offset.addEventListener("keyup", function (event) {
-    valorOffset = event.target.value
-    console.log(valorOffset)})
+    valorOffset = parseInt(event.target.value)
+    })
 
 string.addEventListener("keyup", function (event) {
     valorString = event.target.value
-    console.log(valorString)})
+    })
 
 function encodeButton () {
     let cipherFunction = cipher.encode(valorOffset, valorString);

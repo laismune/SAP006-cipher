@@ -12,27 +12,27 @@
 
  <!-- MENU -->
   <ul class="menuUL">
-    <li id="menuLI"><a href="index.html"    id="menuA">Início</a></li>
-    <li id="menuLI"><a href="sobre.html"    id="menuA">Sobre o Madeira Legal</a></li>
-    <li id="menuLI"><a href="dof.html"      id="menuA">O que é DOF</a></li>
-    <li id="menuLI"><a href="servicos.html" id="menuA">Serviços</a></li>
-    <li id="menuLI"><a href="contato.html"  id="menuA">Contato</a> </li>
+    <li class="menuLI"><a href="index.html"    class="menuA">Início</a></li>
+    <li class="menuLI"><a href="sobre.html"    class="menuA">Sobre o Madeira Legal</a></li>
+    <li class="menuLI"><a href="dof.html"      class="menuA">O que é DOF</a></li>
+    <li class="menuLI"><a href="servicos.html" class="menuA">Serviços</a></li>
+    <li class="menuLI"><a href="contato.html"  class="menuA">Contato</a> </li>
     <img src="treeLogo.png"  id="logo" >
     <img src="ibama.png"  id="logoIbama" >
   </ul>
 
   <h1 id = "EncodeTit"> Criptografia de <br> Código DOF</h1>
 
-  <p id=conditionsToEncode> Certifique-se de inserir corretamente o código DOF. <br> <br>
-    O sistema de criptografia do <Strong>Madeira Legal</Strong> suporta letras <br>
+  <p id="conditionsToEncode"> Certifique-se de inserir corretamente o código DOF. <br> <br>
+    O sistema de criptografia do <strong>Madeira Legal</strong> suporta letras <br>
     maiúsculas, minúsculas, caracteres especiais e números. <br> <br>
     Chaves de criptografia com valores negativos também são permitidas.  
     <br>
     <br> Esteja ciente de que o código DOF criptografado é <strong> CONFIDENCIAL</strong> <br> 
-    e  <Strong> JAMAIS </Strong>deve ser revelado para pessoas <strong> sem autorização.</strong> .
+    e  <strong> JAMAIS </strong>deve ser revelado para pessoas <strong> sem autorização.</strong> .
  </p>
 
-  <input type = "text" id = "messageToEncode" placeholder="Código DOF para cripografar"  maxlength="number">
+  <input type = "string" id = "messageToEncode" placeholder="Código DOF para cripografar"  maxlength="number">
   <input type = "number" id = "offsetToEncode" placeholder="Chave de criptografia" min="-99999999" max="999999999">
   <input type="button" id="botaoToEncode" value="CRIPTOGRAFAR"> 
   <br>
@@ -47,7 +47,7 @@
   <script src="encode.js" type="module"></script>
   <script src="cipher.js" type="module"></script>
 
-  <footer id=footerPages>
+  <footer id="footerPages">
     Copyright ©2021 MadeiraLegal    -
     “A natureza pode suprir todas as necessidades do homem, menos a sua ganância.” <i> (Mahatma gandhi) </i>
   </footer> 

@@ -7,22 +7,22 @@
     font-family:'Montserrat', sans-serif;
     margin-bottom: 400px;
 }
-#menuLI {
+.menuLI {
     display: inline-block;
     padding: 20px 40px 20px 40px;
     margin: 0;
 }
 /* Exclusão de blue underline */
-#menuA {
+.menuA {
     text-decoration: none;
     color: #001a1a  
 } 
 
-#menuAIN{
+.menuAIN{
     text-decoration: none;
     color: chocolate;
 }
-#menuLI:hover {
+.menuLI:hover {
     background-color: #9fdfbf;
     cursor:pointer;
     color: #001a1a;
@@ -611,7 +611,7 @@ h2 {
     max-height:560px;
 }
 
-#webDOF {
+.webDOF {
     text-decoration: none;
     color: sienna;
 } 
