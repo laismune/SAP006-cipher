@@ -17,6 +17,11 @@
     text-decoration: none;
     color: #001a1a  
 } 
+
+#menuAIN{
+    text-decoration: none;
+    color: chocolate;
+}
 #menuLI:hover {
     background-color: #9fdfbf;
     cursor:pointer;
@@ -340,7 +345,7 @@ h2 {
 #bodyDOF {
     margin: 0px;
     font-family:'Montserrat', sans-serif;
-    background-image:    url(dof.jpeg);
+    background-image:    url(ibamaDOF.jpg);
     background-size:     cover;                     
     background-position: center center;
     margin-bottom: 600px;
@@ -367,7 +372,6 @@ h2 {
     background-size:     cover;                     
     background-position: center center;
     margin-bottom: 600px;
-    max-height: 60px;
     opacity: .8;
 }
 
@@ -411,28 +415,7 @@ h2 {
 }
 
 #servicosTextos {
-    background: rgba(255,255,255,.60);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 700px;
-    top: 70px;
-    margin-left: 15px;
-}
-
-#servicosImages {
-    background: rgba(255,255,255,.6);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 600px;
-    top: 70px;
-    margin-left: 750px;
-}
-
-
-#dofTextos {
-    background: rgba(255,255,255,.6);
+    background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
     height:560px;
@@ -441,8 +424,8 @@ h2 {
     margin-left: 15px;
 }
 
-#dofImages {
-    background: rgba(255,255,255,.6);
+#servicosImages {
+    background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
     height:560px;
@@ -451,8 +434,19 @@ h2 {
     margin-left: 850px;
 }
 
+
+#dofTextos {
+    background: rgba(255,255,255,.85);
+    position: absolute;
+    margin-left: 0px;
+    height:560px;
+    width: 800px;
+    top: 70px;
+    margin-left: 15px;
+}
+
 #sobreTextos {
-    background: rgba(255,255,255,.6);
+    background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
     height:560px;
@@ -462,31 +456,326 @@ h2 {
 }
 
 #sobreImages {
-    background: rgba(255,255,255,.6);
+    background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
-    height:560px;
+    height:400px;
     width: 500px;
     top: 70px;
     margin-left: 850px;
 }
 
-#contatoTextos {
-    background: rgba(255,255,255,.6);
+
+
+
+#servicosExplanation1 {
+    position:absolute;
+    top: 75px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#servicosExplanation2 {
+    position:absolute;
+    top: 280px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#servicosExplanation3 {
+    position:absolute;
+    top: 405px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#servicosExplanation4 {
+    position:absolute;
+    top: 75px;
+    right: 60px;
+    width: 420px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#servicosExplanation5 {
+    position:absolute;
+    top: 200px;
+    right: 60px;
+    width: 420px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#criptoServicos {
+    position: absolute;
+    right: 290px;
+    bottom: 70px;
+    font-family:'Montserrat', sans-serif;
+    font-size:15px;
+    padding: 5px 30px 5px 30px;
+    background-color: #001a1a;
+    border-radius: 12px;
+    border-color: #001a1a;
+    color:burlywood;
+}
+#decptoServicos {
+    position: absolute;
+    right: 40px;
+    bottom: 70px;
+    font-family:'Montserrat', sans-serif;
+    font-size:15px;
+    padding: 5px 30px 5px 30px;
+    background-color: #001a1a;
+    border-radius: 12px;
+    border-color: #001a1a;
+    color:burlywood;
+}
+#criptoServicos:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
+#decptoServicos:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
+#dofExplanation1 {
+    position:absolute;
+    top: 75px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#dofExplanation2 {
+    position:absolute;
+    top: 250px;
+    left: 70px;
+    width: 700px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 400;
+    font-size:11pt;
+}
+
+#dofExplanation3 {
+    position:absolute;
+    top: 440px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#dofImages{
     position: absolute;
     margin-left: 0px;
-    height:560px;
-    width: 800px;
+    width: 500px;
+    top: 70px;
+    margin-left: 860px;
+}
+
+#fluxoDof {
+    max-height:560px;
+}
+
+#webDOF {
+    text-decoration: none;
+    color: sienna;
+} 
+
+#sobreExplanation1 {
+    position:absolute;
+    top: 75px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#sobreExplanation2 {
+    position:absolute;
+    top: 250px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#sobreExplanation3 {
+    position:absolute;
+    top: 455px;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#sobreExplanation4 {
+    position:absolute;
+    top: 5px;
+    right: 40px;
+    width: 420px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#sobreExplanation5 {
+    position:absolute;
+    top: 150px;
+    right: 40px;
+    width: 420px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+
+#sobreImage2{
+    max-width: 500px;
+    position:absolute;
+    top: 290px;
+}
+
+#contatoExplanation1 {
+    position:absolute;
+    left: 30px;
+    width: 700px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 600;
+}
+
+#contatoTextos {
+    background: rgba(255,255,255,.85);
+    position: absolute;
+    height:120px;
+    width: 640px;
     top: 70px;
     margin-left: 15px;
 }
 
-#contatoImages {
-    background: rgba(255,255,255,.6);
+#contatoExplanation2 {
+    position:absolute;
+    left: 30px;
+    width: 640px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 600;
+}
+
+#contatoTextos2 {
+    background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
-    height:560px;
-    width: 500px;
-    top: 70px;
-    margin-left: 850px;
+    height:140px;
+    width:640px;
+    top: 280px;
+    margin-left: 15px;
 }
+
+#contatoExplanation3 {
+    position:absolute;
+    left: 50px;
+    width: 720px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 600;
+}
+
+#contatoTextos3 {
+    background: rgba(255,255,255,.85);
+    position: absolute;
+    margin-left: 0px;
+    height:140px;
+    width: 640px;
+    top: 490px;
+    margin-left: 15px;
+}
+
+#contatoTextos3:hover {
+    background: whitesmoke;
+}
+
+#contatoTextos2:hover {
+    background: whitesmoke;
+}
+
+#contatoTextos:hover {
+    background: whitesmoke;
+}
+
+#webLABORATORIA {
+    text-decoration: none;
+    color:magenta;
+} 
+
+#webIBAMA {
+    text-decoration: none;
+    color:green;
+} 
+
+#webEMBRAPA {
+    text-decoration: none;
+    color:teal;
+} 
+
+#webLEI {
+    text-decoration: none;
+    color:teal;
+} 
+
+#webCIPHER {
+    text-decoration: none;
+    color:DeepPink;
+}
+
+

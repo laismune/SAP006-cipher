@@ -10,13 +10,11 @@ let valorStringToDecode = ""
 
 offsetToDecode.addEventListener("keyup", function (event) {
     valorOffsetToDecode = event.target.value
-    console.log(valorOffsetToDecode)
-})
+    console.log(valorOffsetToDecode)})
 
 stringToDecode.addEventListener("keyup", function (event) {
     valorStringToDecode = event.target.value
-    console.log(valorStringToDecode)
-})
+    console.log(valorStringToDecode)})
 
 function decodeButton () {
     let cipherFunctionToDecode = cipher.decode(valorOffsetToDecode, valorStringToDecode);

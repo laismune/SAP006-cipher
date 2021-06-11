@@ -9,13 +9,11 @@ let valorString = ""
 
 offset.addEventListener("keyup", function (event) {
     valorOffset = event.target.value
-    console.log(valorOffset)
-})
+    console.log(valorOffset)})
 
 string.addEventListener("keyup", function (event) {
     valorString = event.target.value
-    console.log(valorString)
-})
+    console.log(valorString)})
 
 function encodeButton () {
     let cipherFunction = cipher.encode(valorOffset, valorString);
