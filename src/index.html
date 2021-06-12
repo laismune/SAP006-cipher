@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Madeira Legal - Início</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body id="bodyIndex">
   
-  
- <!-- MENU -->
-
-  <ul class="menuUL">
-    <li class="menuLI"><a href="index.html"    class="menuAIN">Início</a></li>
-    <li class="menuLI"><a href="sobre.html"    class="menuA">Sobre o Madeira Legal</a></li>
-    <li class="menuLI"><a href="dof.html"      class="menuA">O que é DOF</a></li>
-    <li class="menuLI"><a href="servicos.html" class="menuA">Serviços</a></li>
-    <li class="menuLI"><a href="contato.html"  class="menuA">Contato</a> </li>
-    <img src="treeLogo.png"  id="logo" >
-    <img src="ibama.png"  id="logoIbama" >
+  <ul class="menuUnorderedList">
+    <li class="menuOrderedList"><a href="index.html"    class="menuActualPage">Início</a></li>
+    <li class="menuOrderedList"><a href="about.html"    class="menuHiperlink">Sobre o Madeira Legal</a></li>
+    <li class="menuOrderedList"><a href="dof.html"      class="menuHiperlink">O que é DOF</a></li>
+    <li class="menuOrderedList"><a href="services.html" class="menuHiperlink">Serviços</a></li>
+    <li class="menuOrderedList"><a href="contact.html"  class="menuHiperlink">Contato</a> </li>
+    <img src="images/logoMadeiraLegal.png"  id="menuLogoMadeiraLegal" >
+    <img src="images/logoIBAMA.png"  id="menuLogoIbama" >
   </ul>
 
+  <h1 id="indexTitle"> Portal antifraude <br> de DOF</h1>
 
-  <div class="tit"> 
-    <h1 id="portal"> Portal antifraude <br> de DOF</h1>
-  </div>
-
-    <h2> Selecione o serviço desejado</h2>
+  <h2 id="indexSubtitle"> Selecione o serviço desejado</h2>
 
     <div class="botoes"> 
       
       <form action="encode.html">
-        <input type="submit" value="Criptografar CDOF" id ="cripto" />
+        <input type="submit" value="Criptografar CDOF" id ="indexButtonEncode" />
       </form>
 
       <form action="decode.html">
-        <input type="submit" value="Descriptografar CDOF" id ="decpto" />
+        <input type="submit" value="Descriptografar CDOF" id ="indexButtonDecode" />
       </form>
 
     </div> 
-    <footer id="footerPages">
-      Copyright ©2021 MadeiraLegal    -
-      “A natureza pode suprir todas as necessidades do homem, menos a sua ganância.” <i> (Mahatma gandhi) </i>
-    </footer>    
 
-  <script src="encode.js" type="module"></script> 
+  <script src="decode.js" type="module"></script>
+  <script src="cipher.js" type="module"></script> 
+
+  <footer id="footer">
+    Copyright ©2021 MadeiraLegal    -
+    “A natureza pode suprir todas as necessidades do homem, menos a sua ganância.” <i> (Mahatma gandhi) </i>
+  </footer>    
+
+  
 </body>
 </html>

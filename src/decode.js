@@ -2,10 +2,10 @@ import cipher from './cipher.js';
 
 //DECODE
 
-let offsetToDecode = document.getElementById("offsetToDecode");
-let stringToDecode = document.getElementById("messageToDecode");
-let botaoToDecode = document.getElementById("botaoToDecode");
-let decodedMessage = document.getElementById("decodedMessage")
+let offsetToDecode = document.getElementById("decodePlaceToInsertOffset");
+let stringToDecode = document.getElementById("decodePlaceToInsertMessage");
+let botaoToDecode = document.getElementById("decodeButtonToDecode");
+let decodedMessage = document.getElementById("decodePlaceForTheDecodedMessage")
 let valorOffsetToDecode = ""
 let valorStringToDecode = ""
 

@@ -1,33 +1,29 @@
-/* Menu de navegação: cores de background e hover*/
-.menuUL{
+/*Menu E Rodapé */ 
+.menuUnorderedList{
+    width: 100%;
+    text-align: center;
     background-color: white;
-    margin: 0;
-    padding-left: 0px;
     border-bottom: 1px solid #001a1a;
-    font-family:'Montserrat', sans-serif;
-    margin-bottom: 400px;
 }
-.menuLI {
+.menuOrderedList{
     display: inline-block;
     padding: 20px 40px 20px 40px;
     margin: 0;
 }
-/* Exclusão de blue underline */
-.menuA {
+.menuHiperlink {
     text-decoration: none;
     color: #001a1a  
 } 
-
-.menuAIN{
+.menuActualPage{
     text-decoration: none;
     color: chocolate;
 }
-.menuLI:hover {
+.menuOrderedList:hover {
     background-color: #9fdfbf;
     cursor:pointer;
     color: #001a1a;
 }
-#logo {
+#menuLogoMadeiraLegal {
     height: 50px;
     display: inline-block;
     overflow: hidden;
@@ -35,8 +31,7 @@
     overflow: hidden;
     margin-bottom: -23px;
 }
-
-#logoIbama {
+#menuLogoIbama {
     height: 50px;
     display: inline-block;
     overflow: hidden;
@@ -44,70 +39,7 @@
     overflow: hidden;
     margin-bottom: -20px;
 }
-/* INDEX.HTML*/
-#bodyIndex {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
-    background-image:    url(monkeyOnTheTree.jpeg);
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-    opacity: .8;
-}
-/* Títulos página principal */
-.tit {
-    position: absolute;
-    margin-left: 20px;
-    font-size:43px;
-    font-family:'Montserrat', sans-serif;
-    color: LemonChiffon;
-    background: rgba(0,0,0,.22);
-    top: 70px;
-}
-h2 {
-    position: absolute;
-    bottom: 160px;
-    left: 90px;
-    font-size:35px;
-    font-family:'Montserrat', sans-serif;
-    color: #ccff66;
-    background: rgba(0,0,0,.2);
-}
-/* Botões de criptografar e descriptografar */
-#cripto {
-    position: absolute;
-    left: 20px;
-    bottom: 140px;
-    font-family:'Montserrat', sans-serif;
-    font-size:25px;
-    padding: 5px 30px 5px 30px;
-    background-color: #ccffe6;
-    border-radius: 12px;
-    border-color: #ccffe6;
-}
-#decpto {
-    position: absolute;
-    left: 350px;
-    bottom: 140px;
-    font-family:'Montserrat', sans-serif;
-    font-size:25px;
-    padding: 5px 30px 5px 30px;
-    background-color: #ccffe6;
-    border-radius: 12px;
-    border-color: #ccffe6;
-}
-#cripto:hover {
-    background-color: #9fdfbf;
-    cursor:pointer;
-    color: #001a1a;
-}
-#decpto:hover {
-    background-color: #9fdfbf;
-    cursor:pointer;
-    color: #001a1a;
-}
-/*Rodapé */
-#footerPages {
+#footer {
     position: absolute;
     bottom: 0px;
     color: #ddffcc;
@@ -119,19 +51,79 @@ h2 {
     background: rgba(0,0,0,.2);
     padding: 5px 0px 0px 0px;
 }
+    
+/*INDEX.HTML */
+#bodyIndex {
+    margin: 0px;
+    font-family:'Montserrat', sans-serif;
+    background-image:    url(images/bgIndex.jpeg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    opacity: .8;
+}
+#indexTitle {
+    position: absolute;
+    margin-left: 20px;
+    font-size:43px;
+    font-family:'Montserrat', sans-serif;
+    color: LemonChiffon;
+    background: rgba(0,0,0,.22);
+    top: 70px;
+}
+#indexSubtitle {
+    position: absolute;
+    bottom: 160px;
+    left: 90px;
+    font-size:35px;
+    font-family:'Montserrat', sans-serif;
+    color: #ccff66;
+    background: rgba(0,0,0,.2);
+}
+#indexButtonEncode {
+    position: absolute;
+    left: 20px;
+    bottom: 140px;
+    font-family:'Montserrat', sans-serif;
+    font-size:25px;
+    padding: 5px 30px 5px 30px;
+    background-color: #ccffe6;
+    border-radius: 12px;
+    border-color: #ccffe6;
+}
+#indexButtonDecode {
+    position: absolute;
+    left: 350px;
+    bottom: 140px;
+    font-family:'Montserrat', sans-serif;
+    font-size:25px;
+    padding: 5px 30px 5px 30px;
+    background-color: #ccffe6;
+    border-radius: 12px;
+    border-color: #ccffe6;
+}
+#indexButtonEncode:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
+#indexButtonDecode:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
 
-/* ENCODE.HTML */
+/*ENCODE.HTML */
 #bodyEncode {
     margin: 0px;
     font-family:'Montserrat', sans-serif;
-    background-image:    url(encode.jpeg);
+    background-image:    url(images/bgEncode.jpeg);
     background-size:     cover;                     
     background-position: center center;
     margin-bottom: 80px;
     opacity: .8;
 }
-
-#EncodeTit {
+#encodeTitle {
     position: absolute;
     margin-left: 20px;
     font-size:60px;
@@ -139,16 +131,21 @@ h2 {
     color: #001a1a;
     top: 70px;
 }
-
-#conditionsToEncode {
+#encodeConditions {
     position: absolute;
     left: 20px;
     top: 270px;
  
 
 }
-
-#messageToEncode {
+#encodeConditions2{
+    position:absolute;
+    bottom: 165px;
+    color:#001a1a;
+    left:25px;
+    font-size:10pt;
+}
+#encodePlaceToInsertMessage {
     border: 1px solid #001a1a;
     font-family:'Montserrat', sans-serif;
     font-size: 15pt;
@@ -162,8 +159,7 @@ h2 {
     bottom: 140px;
 
 }
-
-#offsetToEncode {
+#encodePlaceToInsertOffset {
     border: 1px solid #001a1a;
     font-family:'Montserrat', sans-serif;
     font-size: 15pt;
@@ -177,25 +173,7 @@ h2 {
     bottom: 100px;
 
 }
-
-#encodedMessageIndication{
-    top: 80px;
-    position: absolute;
-    right: 40px;
-    font-size: 20pt;
-    color:white;
-
-}
-
-#encodedMessage{
-    top: 150px;
-    right: 20px;
-    position: absolute;
-    color:white;
-    font-size:20pt
-}
-
-#botaoToEncode {
+#encodeButtonToEncode {
     position: absolute;
     left: 20px;
     bottom: 50px;
@@ -209,25 +187,39 @@ h2 {
 
 
 }
-
-#botaoToEncode:hover {
+#encodeButtonToEncode:hover {
     background-color: olivedrab;
     cursor:pointer;
     color: #001a1a;
 }
+#encodeIndicationOfEncodedMessage{
+    top: 80px;
+    position: absolute;
+    right: 40px;
+    font-size: 20pt;
+    color:white;
 
-/* DECODE.HTML */
+}
+#encodePlaceForTheEncodedMessage{
+    top: 150px;
+    right: 20px;
+    position: absolute;
+    color:white;
+    font-size:20pt
+}
+
+
+/*DECODE.HTML */
 #bodyDecode {
     margin: 0px;
     font-family:'Montserrat', sans-serif;
-    background-image:    url(decode.jpg);
+    background-image:    url(images/bgDecode.jpg);
     background-size:     cover;                   
     background-repeat:   no-repeat;
     background-position: top -120px right 0px;
     opacity: .8;
 }
-
-#decodeTit {
+#titleDecode {
     position: absolute;
     margin-left: 20px;
     font-size:60px;
@@ -236,7 +228,6 @@ h2 {
     color: BurlyWood;
     background: rgba(0,0,0,.05);
 }
-
 #conditionsToDecode {
     position: absolute;
     left: 20px;
@@ -245,8 +236,14 @@ h2 {
     background: rgba(0,0,0,.15);
 
 }
-
-#messageToDecode {
+#conditionsToDecode2 {
+    position:absolute;
+    bottom: 165px;
+    color:wheat;
+    left:25px;
+    font-size:10pt;
+}
+#decodePlaceToInsertMessage  {
     border: 1px solid #001a1a;
     font-family:'Montserrat', sans-serif;
     font-size: 15pt;
@@ -260,8 +257,7 @@ h2 {
     bottom: 140px;
 
 }
-
-#offsetToDecode {
+#decodePlaceToInsertOffset {
     border: 1px solid #001a1a;
     font-family:'Montserrat', sans-serif;
     font-size: 15pt;
@@ -275,8 +271,7 @@ h2 {
     bottom: 100px;
 
 }
-
-#botaoToDecode {
+#decodeButtonToDecode {
     position: absolute;
     left: 20px;
     bottom: 50px;
@@ -290,23 +285,20 @@ h2 {
 
 
 }
-
-#botaoToDecode:hover {
+#decodeButtonToDecode:hover {
     background-color: #ffe6cc;
     cursor:pointer;
     color: #331a00;
     border-color: #ffe6cc;
 }
-
-#decodedMessage{
+#decodePlaceForTheDecodedMessage{
     top: 150px;
     right: 20px;
     position: absolute;
     color:white;
     font-size:20pt;
 }
-
-#decodedMessageIndication{
+#decodeIndicationOfDecodedMessage{
     top: 80px;
     position: absolute;
     right: 40px;
@@ -315,106 +307,19 @@ h2 {
 
 }
 
-#sizeCodEncode {
-    position:absolute;
-    bottom: 165px;
-    color:#001a1a;
-    left:25px;
-    font-size:10pt;
-}
 
-#sizeCodDecode {
-    position:absolute;
-    bottom: 165px;
-    color:wheat;
-    left:25px;
-    font-size:10pt;
-}
-
-#bodySobre {
+/*SOBRE.HTML */
+#bodyAbout {
     margin: 0px;
     font-family:'Montserrat', sans-serif;
-    background-image:    url(sobre.jpg);
+    background-image:    url(images/bgAbout.jpg);
     background-size:     cover;                     
     background-position: center center;
     margin-bottom: 480px;
     max-height: 180px;
     opacity: .8;
 }
-
-#bodyDOF {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
-    background-image:    url(ibamaDOF.jpg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 600px;
-    max-height: 80px;
-    opacity: .9;
-    background-repeat:   no-repeat;
-}
-
-#bodyServicos {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
-    background-image:    url(servicos.jpeg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 480px;
-    max-height: 180px;
-    opacity: .85;
-}
-
-#bodyContato {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
-    background-image:    url(contato.jpg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 600px;
-    opacity: .8;
-}
-
-#sobreTit {
-    position: absolute;
-    margin-left: 20px;
-    font-size:60px;
-    font-family:'Montserrat', sans-serif;
-    top: 70px;
-    color: #ff751a;
-}
-
-#dofTit {
-    position: absolute;
-    margin-left: 20px;
-    font-size:60px;
-    font-family:'Montserrat', sans-serif;
-    top: 70px;
-    color: #009900;
-    
-    background: rgba(255,255,255,.15);
-}
-
-#servicosTit {
-    position: absolute;
-    margin-left: 20px;
-    font-size:60px;
-    font-family:'Montserrat', sans-serif;
-    top: 70px;
-    color: #A0522D;
-}
-
-#contatoTit{
-    position: absolute;
-    margin-left: 20px;
-    font-size:60px;
-    font-family:'Montserrat', sans-serif;
-    top: 70px;
-    color: #663300;
-    background: rgba(255,255,255,.15); 
-}
-
-#servicosTextos {
+#aboutLeftDiv {
     background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
@@ -423,39 +328,7 @@ h2 {
     top: 70px;
     margin-left: 15px;
 }
-
-#servicosImages {
-    background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 500px;
-    top: 70px;
-    margin-left: 850px;
-}
-
-
-#dofTextos {
-    background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 800px;
-    top: 70px;
-    margin-left: 15px;
-}
-
-#sobreTextos {
-    background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 800px;
-    top: 70px;
-    margin-left: 15px;
-}
-
-#sobreImages {
+#aboutRightDiv {
     background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
@@ -464,11 +337,7 @@ h2 {
     top: 70px;
     margin-left: 850px;
 }
-
-
-
-
-#servicosExplanation1 {
+#aboutExplanation1 {
     position:absolute;
     top: 75px;
     left: 50px;
@@ -479,10 +348,9 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#servicosExplanation2 {
+#aboutExplanation2 {
     position:absolute;
-    top: 280px;
+    top: 250px;
     left: 50px;
     width: 720px;
     line-height: 1.8;
@@ -491,10 +359,9 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#servicosExplanation3 {
+#aboutExplanation3 {
     position:absolute;
-    top: 405px;
+    top: 455px;
     left: 50px;
     width: 720px;
     line-height: 1.8;
@@ -503,65 +370,66 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#servicosExplanation4 {
+#aboutExplanation4 {
     position:absolute;
-    top: 75px;
-    right: 60px;
-    width: 420px;
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-}
-
-#servicosExplanation5 {
-    position:absolute;
-    top: 200px;
-    right: 60px;
-    width: 420px;
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-}
-
-#criptoServicos {
-    position: absolute;
-    right: 290px;
-    bottom: 70px;
-    font-family:'Montserrat', sans-serif;
-    font-size:15px;
-    padding: 5px 30px 5px 30px;
-    background-color: #001a1a;
-    border-radius: 12px;
-    border-color: #001a1a;
-    color:burlywood;
-}
-#decptoServicos {
-    position: absolute;
+    top: 5px;
     right: 40px;
-    bottom: 70px;
+    width: 420px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+#aboutExplanation5 {
+    position:absolute;
+    top: 150px;
+    right: 40px;
+    width: 420px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+}
+#aboutImageOnTheRightSide{
+    max-width: 500px;
+    position:absolute;
+    top: 290px;
+}
+
+/*DOF.HTML */
+#bodyDOF {
+    margin: 0px;
     font-family:'Montserrat', sans-serif;
-    font-size:15px;
-    padding: 5px 30px 5px 30px;
-    background-color: #001a1a;
-    border-radius: 12px;
-    border-color: #001a1a;
-    color:burlywood;
+    background-image:    url(images/bgDof.jpg);
+    background-size:     cover;                     
+    background-position: center center;
+    margin-bottom: 600px;
+    max-height: 80px;
+    opacity: .9;
+    background-repeat:   no-repeat;
 }
-#criptoServicos:hover {
-    background-color: #9fdfbf;
-    cursor:pointer;
-    color: #001a1a;
+#dofLeftDiv {
+    background: rgba(255,255,255,.85);
+    position: absolute;
+    margin-left: 0px;
+    height:560px;
+    width: 800px;
+    top: 70px;
+    margin-left: 15px;
 }
-#decptoServicos:hover {
-    background-color: #9fdfbf;
-    cursor:pointer;
-    color: #001a1a;
+#dofRightDiv {
+    position: absolute;
+    margin-left: 0px;
+    width: 500px;
+    top: 70px;
+    margin-left: 860px;
 }
+.dofLinkToURLs {
+    text-decoration: none;
+    color: sienna;
+} 
 #dofExplanation1 {
     position:absolute;
     top: 75px;
@@ -573,7 +441,6 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
 #dofExplanation2 {
     position:absolute;
     top: 250px;
@@ -586,7 +453,6 @@ h2 {
     font-weight: 400;
     font-size:11pt;
 }
-
 #dofExplanation3 {
     position:absolute;
     top: 440px;
@@ -598,25 +464,41 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#dofImages{
-    position: absolute;
-    margin-left: 0px;
-    width: 500px;
-    top: 70px;
-    margin-left: 860px;
-}
-
-#fluxoDof {
+#dofImageOnTheRightSide {
     max-height:560px;
 }
 
-.webDOF {
-    text-decoration: none;
-    color: sienna;
-} 
 
-#sobreExplanation1 {
+/*SERVICOS.HTML */
+#bodyServices {
+    margin: 0px;
+    font-family:'Montserrat', sans-serif;
+    background-image:    url(images/bgServices.jpeg);
+    background-size:     cover;                     
+    background-position: center center;
+    margin-bottom: 480px;
+    max-height: 180px;
+    opacity: .85;
+}
+#servicesLeftDiv {
+    background: rgba(255,255,255,.85);
+    position: absolute;
+    margin-left: 0px;
+    height:560px;
+    width: 800px;
+    top: 70px;
+    margin-left: 15px;
+}
+#servicesRightDiv {
+    background: rgba(255,255,255,.85);
+    position: absolute;
+    margin-left: 0px;
+    height:560px;
+    width: 500px;
+    top: 70px;
+    margin-left: 850px;
+}
+#servicesExplanation1 {
     position:absolute;
     top: 75px;
     left: 50px;
@@ -627,10 +509,9 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#sobreExplanation2 {
+#servicesExplanation2 {
     position:absolute;
-    top: 250px;
+    top: 280px;
     left: 50px;
     width: 720px;
     line-height: 1.8;
@@ -639,10 +520,9 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#sobreExplanation3 {
+#servicesExplanation3 {
     position:absolute;
-    top: 455px;
+    top: 405px;
     left: 50px;
     width: 720px;
     line-height: 1.8;
@@ -651,11 +531,10 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#sobreExplanation4 {
+#servicesExplanation4 {
     position:absolute;
-    top: 5px;
-    right: 40px;
+    top: 75px;
+    right: 60px;
     width: 420px;
     line-height: 1.8;
     text-align: justify;
@@ -663,26 +542,61 @@ h2 {
     text-indent: 50px;
     font-weight: 600;
 }
-
-#sobreExplanation5 {
+#servicesExplanation5 {
     position:absolute;
-    top: 150px;
-    right: 40px;
+    top: 200px;
+    right: 60px;
     width: 420px;
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
+    top: 70px;
+    color: #663300;
+    background: rgba(255,255,255,.15); 
+}
+#servicesEncodeButton {
+    position: absolute;
+    right: 290px;
+    bottom: 70px;
+    font-family:'Montserrat', sans-serif;
+    font-size:15px;
+    padding: 5px 30px 5px 30px;
+    background-color: #001a1a;
+    border-radius: 12px;
+    border-color: #001a1a;
+    color:burlywood;
+}
+#servicesDecodeButton{
+    position: absolute;
+    right: 40px;
+    bottom: 70px;
+    font-family:'Montserrat', sans-serif;
+    font-size:15px;
+    padding: 5px 30px 5px 30px;
+    background-color: #001a1a;
+    border-radius: 12px;
+    border-color: #001a1a;
+    color:burlywood;
+}
+#servicesEncodeButton:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
+#servicesDecodeButton:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
 }
 
-#sobreImage2{
-    max-width: 500px;
-    position:absolute;
-    top: 290px;
+/* CONTATO.HTML */
+#bodyContact {
+    margin: 0px;
+    font-family:'Montserrat', sans-serif;
+    background-image:    url(images/bgContact.jpg);
+    background-size:     cover;                     
+    background-position: center center;
+    margin-bottom: 600px;
+    opacity: .8;
 }
-
-#contatoExplanation1 {
+#contactExplanation1 {
     position:absolute;
     left: 30px;
     width: 700px;
@@ -691,8 +605,7 @@ h2 {
     text-justify: inter-word;
     font-weight: 600;
 }
-
-#contatoTextos {
+#contactFirstDiv {
     background: rgba(255,255,255,.85);
     position: absolute;
     height:120px;
@@ -700,8 +613,10 @@ h2 {
     top: 70px;
     margin-left: 15px;
 }
-
-#contatoExplanation2 {
+#contactFirstDiv:hover {
+    background: whitesmoke;
+}
+#contactExplanation2 {
     position:absolute;
     left: 30px;
     width: 640px;
@@ -710,8 +625,7 @@ h2 {
     text-justify: inter-word;
     font-weight: 600;
 }
-
-#contatoTextos2 {
+#contactSecondDiv {
     background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
@@ -720,8 +634,10 @@ h2 {
     top: 280px;
     margin-left: 15px;
 }
-
-#contatoExplanation3 {
+#contactSecondDiv:hover {
+    background: whitesmoke;
+}
+#contactExplanation3 {
     position:absolute;
     left: 50px;
     width: 720px;
@@ -730,8 +646,7 @@ h2 {
     text-justify: inter-word;
     font-weight: 600;
 }
-
-#contatoTextos3 {
+#contactThirdDiv {
     background: rgba(255,255,255,.85);
     position: absolute;
     margin-left: 0px;
@@ -740,42 +655,10 @@ h2 {
     top: 490px;
     margin-left: 15px;
 }
-
-#contatoTextos3:hover {
+#contactThirdDiv:hover {
     background: whitesmoke;
 }
-
-#contatoTextos2:hover {
-    background: whitesmoke;
-}
-
-#contatoTextos:hover {
-    background: whitesmoke;
-}
-
-#webLABORATORIA {
+.contactLinkToURLs{
     text-decoration: none;
-    color:magenta;
+    color:orange;
 } 
-
-#webIBAMA {
-    text-decoration: none;
-    color:green;
-} 
-
-#webEMBRAPA {
-    text-decoration: none;
-    color:teal;
-} 
-
-#webLEI {
-    text-decoration: none;
-    color:teal;
-} 
-
-#webCIPHER {
-    text-decoration: none;
-    color:DeepPink;
-}
-
-

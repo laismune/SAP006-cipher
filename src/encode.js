@@ -1,10 +1,10 @@
 import cipher from './cipher.js';
 
 //ENCODE
-let offset = document.getElementById("offsetToEncode");
-let string = document.getElementById("messageToEncode");
-let botao = document.getElementById("botaoToEncode");
-let encodedMessage = document.getElementById("encodedMessage")
+let offset = document.getElementById("encodePlaceToInsertOffset");
+let string = document.getElementById("encodePlaceToInsertMessage");
+let botao = document.getElementById("encodeButtonToEncode");
+let encodedMessage = document.getElementById("encodePlaceForTheEncodedMessage")
 let valorOffset = ""
 let valorString = ""
 

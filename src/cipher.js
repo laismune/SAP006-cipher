@@ -116,7 +116,7 @@ const cipher = {
 								let newLetter = String.fromCharCode(newAlphabetIndex);
 								messageDecoded += newLetter;
 							} 
-							else if (position + valueNumbeToDecode < 0) {
+							else if (position + valueNumbeToDecode <= 0) {
 									let newPosition = position + valueNumbeToDecode;
 									let newPositionPositive = newPosition * (-1)
 									let newPositionFull = newPositionPositive % 26;
@@ -143,7 +143,7 @@ const cipher = {
 								let newLetter = String.fromCharCode(newAlphabetIndex);
 								messageDecoded += newLetter;
 							} 
-							else if (position + valueNumbeToDecode < 0) {
+							else if (position + valueNumbeToDecode <= 0) {
 								let newPosition = position + valueNumbeToDecode;
 								let newPositionPositive = newPosition * (-1)
 								let newPositionFull = newPositionPositive % 26;
