@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Madeira Legal - Descriptografia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body id="bodyDecode" class="bgStyles">
+
+  <ul class="menuUnorderedList">
+    <li class="menuOrderedList"><a href="index.html"    class="menuHiperlink">Início</a></li>
+    <li class="menuOrderedList"><a href="about.html"    class="menuHiperlink">Sobre o Madeira Legal</a></li>
+    <li class="menuOrderedList"><a href="dof.html"      class="menuHiperlink">O que é DOF</a></li>
+    <li class="menuOrderedList"><a href="services.html" class="menuHiperlink">Serviços</a></li>
+    <li class="menuOrderedList"><a href="contact.html"  class="menuHiperlink">Contato</a> </li>
+    <img src="images/logoMadeiraLegal.png"  id="menuLogoMadeiraLegal" >
+    <img src="images/logoIBAMA.png"  id="menuLogoIbama" >
+  </ul>
+  
+  <h1 id = "titleDecode"> Descriptografia<br> de Código DOF</h1>
+
+  <p class="decodeConditions" id="decodeConditions1"> 
+    <br> Esteja ciente de que o código DOF criptografado é <strong> CONFIDENCIAL</strong> <br> 
+    e <strong> JAMAIS </strong>deve ser revelado para pessoas <strong> sem autorização.</strong> . <br>
+  </p>
+  
+  <p class="decodeConditions" id="decodeConditions2"> Certifique-se de inserir corretamente o código DOF. <br><br> 
+    O sistema de criptografia do <strong>Madeira Legal</strong> suporta letras <strong>maiúsculas</strong>,<strong>minúscu-<br>las</strong>, 
+    <strong>caracteres especiais</strong> e <strong>números</strong>.<strong>Chaves de criptografia</strong> com <strong>valores nega-<br>tivos</strong> também são permitidas.
+    <br><br> O código DOF pode variar de <strong>10 à 25</strong> caracteres.
+  </p>
+
+  <input type = "text" id = "decodePlaceToInsertMessage" placeholder="Código DOF para descripografar"  maxlength="number"> 
+  <br>
+  <input type = "number" id = "decodePlaceToInsertOffset" placeholder="Chave de descriptografia" min="-99999999" max="999999999">
+  <input type="button" id="decodeButtonToDecode" value="DESCRIPTOGRAFAR"> 
+  <br>
+
+  <p id="decodeIndicationOfDecodedMessage"> Código DOF descriptografado: </p>
+
+  <p id="decodePlaceForTheDecodedMessage"> </p>
+
+  <script src="decode.js" type="module"></script>
+  <script src="cipher.js" type="module"></script> 
+
+  <footer class="footer" id="decodeFooter">
+    Copyright ©2021 MadeiraLegal    -
+    “A natureza pode suprir todas as necessidades do homem, menos a sua ganância.” <i> (Mahatma gandhi) </i>
+  </footer> 
+
+</body>
+</html>

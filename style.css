@@ -1,0 +1,388 @@
+/*Menu E Rodapé */ 
+.menuUnorderedList{
+    text-align: left;
+    background-color: white;
+    border-bottom: 1px solid #001a1a;
+    margin-top:-10px;
+    margin-left: -10px;
+    width: 100%;
+}
+.menuOrderedList{
+    display: inline-block;
+    padding: 20px 40px 20px 40px;
+}
+.menuHiperlink {
+    text-decoration: none;
+    color: #001a1a  
+} 
+.menuActualPage{
+    text-decoration: none;
+    color: chocolate;
+}
+.menuOrderedList:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
+#menuLogoMadeiraLegal, #menuLogoIbama {
+    height: 50px;
+    margin-bottom: -20px;
+}
+.footer {
+    position:fixed;
+    color: #ddffcc;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;   
+    background: rgba(0,0,0,.2);
+    padding: 5px 0px 0px 0px;
+    bottom: 0px;
+    margin-left: -10px;
+}
+
+/*Body General*/
+body {
+    font-family:'Montserrat', sans-serif;
+}
+/*Backgrounds Styles*/
+.bgStyles {
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .8;
+}
+/*Buttons and Forms General */
+input {
+    font-family:'Montserrat', sans-serif;  
+}
+
+/*INDEX.HTML */
+#bodyIndex {
+    background-image:    url(images/bgIndex.jpeg);
+}
+#indexTitle {
+    margin-top: 70px;
+    margin-left: 40px;
+    font-size:70px;
+    color: LemonChiffon;
+    background: rgba(0,0,0,.22);
+}
+#indexSubtitle {
+    margin-top: 80px;  
+    margin-left: 120px;
+    font-size:35px;
+    color: #ccff66;
+    background: rgba(0,0,0,.2);
+    margin-left: 20px;
+}
+.indexButtons {
+    float: left;
+    font-size:25px;
+    padding: 5px 15px 5px 15px;
+    background-color: #ccffe6;
+    border-color: #ccffe6;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+.indexButtons:hover{
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
+
+
+/*ENCODE.HTML */
+#bodyEncode {
+    background-image:    url(images/bgEncode.jpeg);
+}
+#encodeTitle {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    font-size:60px;
+    color: #001a1a;
+}
+#encodeConditions1{
+    margin-top: -50px;
+    margin-left: 10px;
+}
+#encodeConditions2 {
+    margin-left:10px;
+    margin-bottom: 10px;
+    color:#001a1a;
+    font-size:10pt;
+}
+#encodePlaceToInsertMessage, #encodePlaceToInsertOffset {
+    margin-left: 10px;
+    border: 1px solid #001a1a;
+    font-size: 15pt;
+    font-weight: bold;
+    height: 30px;
+    width: 500px;
+    border-radius: 4px;
+}
+#encodePlaceToInsertOffset {
+    margin-top: 5px;
+    width: 250px;
+}
+#encodeButtonToEncode {
+    margin-left: 20px;
+    font-size:18px;
+    padding: 4px;
+    background-color: #001a1a;
+    color: DarkSeaGreen;
+    border-radius: 4px;
+    border-color: #001a1a;
+}
+#encodeButtonToEncode:hover {
+    background-color: olivedrab;
+    cursor:pointer;
+    color: #001a1a;
+}
+#encodeIndicationOfEncodedMessage{
+    font-size: 12pt;
+    color:#001a1a;
+    margin-left: 10px;
+}
+#encodePlaceForTheEncodedMessage{
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 20pt;
+    color:#001a1a;
+}
+
+
+/*DECODE.HTML */
+#bodyDecode {
+    background-image:    url(images/bgDecode.jpg);
+}
+#titleDecode {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    font-size:60px;
+    color: BurlyWood;
+    background: rgba(0,0,0,.05);
+}
+#decodeConditions1{
+    margin-top: -50px;
+    margin-left: 10px;
+    color:orange;
+}
+#decodeConditions2{
+    margin-left:10px;
+    margin-bottom: 10px;
+    font-size:10pt;
+    color:orange;
+}
+#decodePlaceToInsertMessage, #decodePlaceToInsertOffset {
+    margin-left: 10px;
+    border: 1px solid #001a1a;
+    font-size: 15pt;
+    font-weight: bold;
+    height: 30px;
+    width: 500px;
+    border-radius: 4px;
+}
+#decodePlaceToInsertOffset {
+    margin-top: 5px;
+    width: 250px;
+}
+#decodeButtonToDecode {
+    margin-left: 20px;
+    font-size:18px;
+    padding: 4px;
+    background-color:lightgoldenrodyellow;
+    color: black;
+    border-radius: 4px;
+    border-color: lightgoldenrodyellow;
+
+}
+#decodeButtonToDecode:hover {
+    background-color: orange;
+    cursor:pointer;
+    color: black;
+}
+#decodeIndicationOfDecodedMessage{
+    font-size: 12pt;
+    color:whitesmoke;
+    margin-left: 10px;
+}
+#decodePlaceForTheDecodedMessage{
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: 20pt;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,.6);
+    width: 600px;
+}
+
+
+/*SOBRE.HTML */
+#bodyAbout {
+    background-image:    url(images/bgAbout.jpg);
+    font-size: 11.8pt;
+
+}
+#aboutLeftDiv {
+    float: left;
+    background: rgba(255,255,255,.85);
+    height:55%;
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+#aboutRightDiv {
+    float: left;
+    background: rgba(255,255,255,.85);
+    width: 35%;
+    margin-left: 5px;
+}
+.aboutExplanation {
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:0px 15px 0px 15px;
+}
+#aboutImageOnTheRightSide{
+    max-width: 35%;
+    margin-top: 12px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+/*DOF.HTML */
+#bodyDOF {
+    background-image:    url(images/bgDof.jpg);
+    font-size: 11.8pt;
+}
+#dofLeftDiv {
+    float: left;
+    background: rgba(255,255,255,.85);
+    height:55%;
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+#dofRightDiv {
+    float: left;
+    width: 35%;
+    margin-left: 5px;
+}
+.dofLinkToURLs {
+    text-decoration: none;
+    color: sienna;
+} 
+#dofExplanation1, #dofExplanation2, #dofExplanation3 {
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+    padding:10px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#dofExplanation2 {
+    font-size:11pt;
+    margin-top: -40px;
+}
+#dofExplanation3 {
+    margin-top: -12px;
+}
+#dofImageOnTheRightSide {
+    max-height:557px;
+}
+
+
+/*SERVICOS.HTML */
+#bodyServices {
+    background-image:    url(images/bgServices.jpeg);
+    font-size: 11.8pt;
+}
+#servicesLeftDiv {
+    float: left;
+    background: rgba(255,255,255,.85);
+    height:58%;
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 30px;
+}
+#servicesRightDiv {
+    float: left;
+    width: 35%;
+    margin-left: 5px;
+    background: rgba(255,255,255,.85);
+    margin-bottom: 40px;    
+}
+.servicesExplanation {
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+    padding:0px 15px 0px 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#servicesEncodeButton, #servicesDecodeButton {
+    float: left;
+    font-size:15px;
+    padding: 4px;
+    margin-top: -5px;
+    background-color: #001a1a;
+    border-radius: 12px;
+    border-color: #001a1a;
+    color:burlywood;
+    margin-left: 50px;
+    margin-bottom: 22px;
+}
+#servicesDecodeButton{
+    margin-left: 35px;
+    margin-top: -23px;
+}
+#servicesEncodeButton:hover, #servicesDecodeButton:hover {
+    background-color: #9fdfbf;
+    cursor:pointer;
+    color: #001a1a;
+}
+
+
+/* CONTATO.HTML */
+#bodyContact {
+    background-image:    url(images/bgContact.jpg);
+}
+#contactExplanation1,#contactExplanation2,#contactExplanation3 {
+    margin-left: 15px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 500;
+    padding:10px;
+}  
+#contactExplanation1 {
+    margin-top: 90px;
+}
+#contactFirstDiv,#contactSecondDiv,#contactThirdDiv {
+    background: rgba(255,255,255,.85);
+    height:130px;
+    width: 640px;
+    margin-left: 28%;
+}
+#contactFirstDiv{
+    height: 105px;
+}
+#contactFirstDiv:hover, #contactSecondDiv:hover, #contactThirdDiv:hover{
+    background: powderblue;
+}
+.contactLinkToURLs{
+    text-decoration: none;
+    color:navy;
+} 
