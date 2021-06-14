@@ -1,14 +1,15 @@
 /*Menu E Rodapé */ 
 .menuUnorderedList{
-    width: 100%;
-    text-align: center;
+    text-align: left;
     background-color: white;
     border-bottom: 1px solid #001a1a;
+    margin-top:-10px;
+    margin-left: -10px;
+    width: 100%;
 }
 .menuOrderedList{
     display: inline-block;
     padding: 20px 40px 20px 40px;
-    margin: 0;
 }
 .menuHiperlink {
     text-decoration: none;
@@ -25,82 +26,75 @@
 }
 #menuLogoMadeiraLegal {
     height: 50px;
-    display: inline-block;
-    overflow: hidden;
-    padding: 0px 0px 0px 180px;
-    overflow: hidden;
     margin-bottom: -23px;
 }
 #menuLogoIbama {
     height: 50px;
-    display: inline-block;
-    overflow: hidden;
-    padding: 0px 0px 0px 0px;
-    overflow: hidden;
     margin-bottom: -20px;
 }
-#footer {
-    position: absolute;
-    bottom: 0px;
+.footer {
+    position:fixed;
     color: #ddffcc;
     text-align: center;
     font-size: 12px;
-    vertical-align: left;
-    width: 100%;
-    height: 20px;    
+    width: 100%;   
     background: rgba(0,0,0,.2);
     padding: 5px 0px 0px 0px;
+    bottom: 0px;
+    margin-left: -10px;
 }
-    
-/*INDEX.HTML */
-#bodyIndex {
-    margin: 0px;
+
+/*Body General*/
+body {
     font-family:'Montserrat', sans-serif;
-    background-image:    url(images/bgIndex.jpeg);
-    background-size:     cover;                      /* <------ */
+}
+/*Backgrounds Styles*/
+.bgStyles {
+    background-size:     cover;                     
     background-repeat:   no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
     opacity: .8;
 }
+/*Buttons and Forms General */
+input {
+    font-family:'Montserrat', sans-serif;  
+}
+
+/*INDEX.HTML */
+#bodyIndex {
+    background-image:    url(images/bgIndex.jpeg);
+}
 #indexTitle {
-    position: absolute;
-    margin-left: 20px;
-    font-size:43px;
-    font-family:'Montserrat', sans-serif;
+    margin-top: 70px;
+    margin-left: 40px;
+    font-size:70px;
     color: LemonChiffon;
     background: rgba(0,0,0,.22);
-    top: 70px;
+    
 }
 #indexSubtitle {
-    position: absolute;
-    bottom: 160px;
-    left: 90px;
+    margin-top: 80px;  
+    margin-left: 120px;
     font-size:35px;
-    font-family:'Montserrat', sans-serif;
     color: #ccff66;
     background: rgba(0,0,0,.2);
+    margin-left: 20px;
+}
+#indexButtonEncode, #indexButtonDecode{
+    float: left;
+    font-size:25px;
+    padding: 5px 15px 5px 15px;
+    background-color: #ccffe6;
+    border-color: #ccffe6;
+    border-radius: 12px;
+    margin-bottom: 50px;
 }
 #indexButtonEncode {
-    position: absolute;
-    left: 20px;
-    bottom: 140px;
-    font-family:'Montserrat', sans-serif;
-    font-size:25px;
-    padding: 5px 30px 5px 30px;
-    background-color: #ccffe6;
-    border-radius: 12px;
-    border-color: #ccffe6;
+    margin-left: 15px;
 }
 #indexButtonDecode {
-    position: absolute;
-    left: 350px;
-    bottom: 140px;
-    font-family:'Montserrat', sans-serif;
-    font-size:25px;
-    padding: 5px 30px 5px 30px;
-    background-color: #ccffe6;
-    border-radius: 12px;
-    border-color: #ccffe6;
+    margin-left: 15px;
 }
 #indexButtonEncode:hover {
     background-color: #9fdfbf;
@@ -112,80 +106,52 @@
     cursor:pointer;
     color: #001a1a;
 }
+#indexFooter {
+    clear:left;
+}
 
 /*ENCODE.HTML */
 #bodyEncode {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
     background-image:    url(images/bgEncode.jpeg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 80px;
-    opacity: .8;
 }
 #encodeTitle {
-    position: absolute;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
     font-size:60px;
-    font-family:'Montserrat', sans-serif;
     color: #001a1a;
-    top: 70px;
 }
-#encodeConditions {
-    position: absolute;
-    left: 20px;
-    top: 270px;
- 
-
+#encodeConditions1{
+    margin-top: -50px;
+    margin-left: 10px;
 }
-#encodeConditions2{
-    position:absolute;
-    bottom: 165px;
+#encodeConditions2 {
+    margin-left:10px;
+    margin-bottom: 10px;
     color:#001a1a;
-    left:25px;
     font-size:10pt;
 }
-#encodePlaceToInsertMessage {
+#encodePlaceToInsertMessage, #encodePlaceToInsertOffset {
+    margin-left: 10px;
     border: 1px solid #001a1a;
-    font-family:'Montserrat', sans-serif;
     font-size: 15pt;
-    color: black;
     font-weight: bold;
     height: 30px;
     width: 500px;
     border-radius: 4px;
-    position: absolute;
-    left: 20px;
-    bottom: 140px;
-
 }
 #encodePlaceToInsertOffset {
-    border: 1px solid #001a1a;
-    font-family:'Montserrat', sans-serif;
-    font-size: 15pt;
-    color: black;
-    font-weight: bold;
-    height: 30px;
-    width: 300px;
-    border-radius: 4px;
-    position: absolute;
-    left: 20px;
-    bottom: 100px;
-
+    margin-top: 5px;
+    width: 250px;
 }
 #encodeButtonToEncode {
-    position: absolute;
-    left: 20px;
-    bottom: 50px;
-    font-family:'Montserrat', sans-serif;
-    font-size:25px;
-    padding: 5px 30px 5px 30px;
+    margin-left: 20px;
+    font-size:18px;
+    padding: 4px;
     background-color: #001a1a;
     color: DarkSeaGreen;
-    border-radius: 12px;
+    border-radius: 4px;
     border-color: #001a1a;
-
-
 }
 #encodeButtonToEncode:hover {
     background-color: olivedrab;
@@ -193,383 +159,321 @@
     color: #001a1a;
 }
 #encodeIndicationOfEncodedMessage{
-    top: 80px;
-    position: absolute;
-    right: 40px;
-    font-size: 20pt;
-    color:white;
-
+    font-size: 12pt;
+    color:#001a1a;
+    margin-left: 10px;
 }
 #encodePlaceForTheEncodedMessage{
-    top: 150px;
-    right: 20px;
-    position: absolute;
-    color:white;
-    font-size:20pt
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 20pt;
+    color:#001a1a;
 }
 
 
 /*DECODE.HTML */
 #bodyDecode {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
     background-image:    url(images/bgDecode.jpg);
-    background-size:     cover;                   
-    background-repeat:   no-repeat;
-    background-position: top -120px right 0px;
-    opacity: .8;
 }
 #titleDecode {
-    position: absolute;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
     font-size:60px;
-    font-family:'Montserrat', sans-serif;
-    top: 70px;
     color: BurlyWood;
     background: rgba(0,0,0,.05);
 }
-#conditionsToDecode {
-    position: absolute;
-    left: 20px;
-    top: 270px;
-    color: #ff8000;
-    background: rgba(0,0,0,.15);
-
+#decodeConditions1{
+    margin-top: -50px;
+    margin-left: 10px;
+    color:orange;
 }
-#conditionsToDecode2 {
-    position:absolute;
-    bottom: 165px;
-    color:wheat;
-    left:25px;
+#decodeConditions2{
+    margin-left:10px;
+    margin-bottom: 10px;
     font-size:10pt;
+    color:orange;
 }
-#decodePlaceToInsertMessage  {
+#decodePlaceToInsertMessage, #decodePlaceToInsertOffset {
+    margin-left: 10px;
     border: 1px solid #001a1a;
-    font-family:'Montserrat', sans-serif;
     font-size: 15pt;
-    color: black;
     font-weight: bold;
     height: 30px;
     width: 500px;
     border-radius: 4px;
-    position: absolute;
-    left: 20px;
-    bottom: 140px;
-
 }
 #decodePlaceToInsertOffset {
-    border: 1px solid #001a1a;
-    font-family:'Montserrat', sans-serif;
-    font-size: 15pt;
-    color: black;
-    font-weight: bold;
-    height: 30px;
-    width: 300px;
-    border-radius: 4px;
-    position: absolute;
-    left: 20px;
-    bottom: 100px;
-
+    margin-top: 5px;
+    width: 250px;
 }
 #decodeButtonToDecode {
-    position: absolute;
-    left: 20px;
-    bottom: 50px;
-    font-family:'Montserrat', sans-serif;
-    font-size:25px;
-    padding: 5px 30px 5px 30px;
-    background-color: #e67300;
-    color: #001a1a;
-    border-radius: 12px;
-    border-color: #e67300;
-
+    margin-left: 20px;
+    font-size:18px;
+    padding: 4px;
+    background-color:lightgoldenrodyellow;
+    color: black;
+    border-radius: 4px;
+    border-color: lightgoldenrodyellow;
 
 }
 #decodeButtonToDecode:hover {
-    background-color: #ffe6cc;
+    background-color: orange;
     cursor:pointer;
-    color: #331a00;
-    border-color: #ffe6cc;
-}
-#decodePlaceForTheDecodedMessage{
-    top: 150px;
-    right: 20px;
-    position: absolute;
-    color:white;
-    font-size:20pt;
+    color: black;
 }
 #decodeIndicationOfDecodedMessage{
-    top: 80px;
-    position: absolute;
-    right: 40px;
+    font-size: 12pt;
+    color:whitesmoke;
+    margin-left: 10px;
+}
+#decodePlaceForTheDecodedMessage{
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
     font-size: 20pt;
-    color:white;
-
+    color: whitesmoke;
+    background-color: rgba(0,0,0,.6);
+    width: 600px;
 }
 
 
 /*SOBRE.HTML */
 #bodyAbout {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
     background-image:    url(images/bgAbout.jpg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 480px;
-    max-height: 180px;
-    opacity: .8;
+    font-size: 11.8pt;
+
 }
 #aboutLeftDiv {
+    float: left;
     background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 800px;
-    top: 70px;
-    margin-left: 15px;
+    height:55%;
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
 #aboutRightDiv {
+    float: left;
     background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:400px;
-    width: 500px;
-    top: 70px;
-    margin-left: 850px;
+    width: 35%;
+    margin-left: 5px;
 }
 #aboutExplanation1 {
-    position:absolute;
-    top: 75px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:10px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #aboutExplanation2 {
-    position:absolute;
-    top: 250px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:0px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px
 }
 #aboutExplanation3 {
-    position:absolute;
-    top: 455px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:0px 10px 0px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #aboutExplanation4 {
-    position:absolute;
-    top: 5px;
-    right: 40px;
-    width: 420px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:10px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #aboutExplanation5 {
-    position:absolute;
-    top: 150px;
-    right: 40px;
-    width: 420px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:0px 10px 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #aboutImageOnTheRightSide{
-    max-width: 500px;
-    position:absolute;
-    top: 290px;
+    max-width: 35%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
 }
 
 /*DOF.HTML */
 #bodyDOF {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
     background-image:    url(images/bgDof.jpg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 600px;
-    max-height: 80px;
-    opacity: .9;
-    background-repeat:   no-repeat;
+    font-size: 11.8pt;
 }
 #dofLeftDiv {
+    float: left;
     background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 800px;
-    top: 70px;
-    margin-left: 15px;
+    height:55%;
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
 #dofRightDiv {
-    position: absolute;
-    margin-left: 0px;
-    width: 500px;
-    top: 70px;
-    margin-left: 860px;
+    float: left;
+    width: 35%;
+    margin-left: 5px;
 }
 .dofLinkToURLs {
     text-decoration: none;
     color: sienna;
 } 
 #dofExplanation1 {
-    position:absolute;
-    top: 75px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:10px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #dofExplanation2 {
-    position:absolute;
-    top: 250px;
-    left: 70px;
-    width: 700px;
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 400;
-    font-size:11pt;
-}
-#dofExplanation3 {
-    position:absolute;
-    top: 440px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:0px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size:11pt;
+    margin-top: -25px;
+
+}
+#dofExplanation3 {
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+    padding:0px 10px 0px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #dofImageOnTheRightSide {
-    max-height:560px;
+    max-height:566px;
 }
 
 
 /*SERVICOS.HTML */
 #bodyServices {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
     background-image:    url(images/bgServices.jpeg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 480px;
-    max-height: 180px;
-    opacity: .85;
+    font-size: 11.8pt;
 }
 #servicesLeftDiv {
+    float: left;
     background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 800px;
-    top: 70px;
-    margin-left: 15px;
+    height:58%;
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 30px;
 }
 #servicesRightDiv {
+    float: left;
+    width: 35%;
+    margin-left: 5px;
     background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:560px;
-    width: 500px;
-    top: 70px;
-    margin-left: 850px;
+    margin-bottom: 40px;    
 }
 #servicesExplanation1 {
-    position:absolute;
-    top: 75px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:10px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #servicesExplanation2 {
-    position:absolute;
-    top: 280px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:0px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px
 }
 #servicesExplanation3 {
-    position:absolute;
-    top: 405px;
-    left: 50px;
-    width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:0px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #servicesExplanation4 {
-    position:absolute;
-    top: 75px;
-    right: 60px;
-    width: 420px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
+    padding:0px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #servicesExplanation5 {
-    position:absolute;
-    top: 200px;
-    right: 60px;
-    width: 420px;
-    top: 70px;
-    color: #663300;
-    background: rgba(255,255,255,.15); 
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-weight: 600;
+    padding:0px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#servicesExplanation6 {
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 600;
+    padding:0px 10px 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -10px;
 }
 #servicesEncodeButton {
-    position: absolute;
-    right: 290px;
-    bottom: 70px;
-    font-family:'Montserrat', sans-serif;
+    float: left;
     font-size:15px;
-    padding: 5px 30px 5px 30px;
+    padding: 4px;
+    margin-top: -5px;
     background-color: #001a1a;
     border-radius: 12px;
     border-color: #001a1a;
     color:burlywood;
+    margin-left: 50px;
+    margin-bottom: 22px;
 }
 #servicesDecodeButton{
-    position: absolute;
-    right: 40px;
-    bottom: 70px;
-    font-family:'Montserrat', sans-serif;
+    float: left;
+    margin-left: 35px;
+    margin-top: -23px;
+    margin-bottom:12px;
     font-size:15px;
-    padding: 5px 30px 5px 30px;
+    padding: 4px;
     background-color: #001a1a;
     border-radius: 12px;
     border-color: #001a1a;
@@ -588,77 +492,64 @@
 
 /* CONTATO.HTML */
 #bodyContact {
-    margin: 0px;
-    font-family:'Montserrat', sans-serif;
     background-image:    url(images/bgContact.jpg);
-    background-size:     cover;                     
-    background-position: center center;
-    margin-bottom: 600px;
-    opacity: .8;
 }
 #contactExplanation1 {
-    position:absolute;
-    left: 30px;
-    width: 700px;
+    margin-left: 15px;
+    margin-top: 90px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     font-weight: 600;
-}
+    padding:10px;
+}  
 #contactFirstDiv {
     background: rgba(255,255,255,.85);
-    position: absolute;
-    height:120px;
+    height:105px;
     width: 640px;
-    top: 70px;
-    margin-left: 15px;
+    margin-left: 25%;
 }
 #contactFirstDiv:hover {
-    background: whitesmoke;
+    background: powderblue;
 }
 #contactExplanation2 {
-    position:absolute;
-    left: 30px;
-    width: 640px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     font-weight: 600;
+    margin-left: 15px;
+    padding:10px;
 }
 #contactSecondDiv {
     background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:140px;
-    width:640px;
-    top: 280px;
-    margin-left: 15px;
+    height:130px;
+    width: 640px;
+    margin-left: 25%;
 }
 #contactSecondDiv:hover {
-    background: whitesmoke;
+    background: powderblue;
 }
 #contactExplanation3 {
-    position:absolute;
     left: 50px;
     width: 720px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     font-weight: 600;
+    margin-left: 15px;
+    padding:10px;
 }
 #contactThirdDiv {
     background: rgba(255,255,255,.85);
-    position: absolute;
-    margin-left: 0px;
-    height:140px;
+    height:130px;
     width: 640px;
-    top: 490px;
-    margin-left: 15px;
+    margin-left: 25%;
+    margin-bottom: 50px;
 }
 #contactThirdDiv:hover {
-    background: whitesmoke;
+    background: powderblue;
 }
 .contactLinkToURLs{
     text-decoration: none;
-    color:orange;
+    color:navy;
 } 
