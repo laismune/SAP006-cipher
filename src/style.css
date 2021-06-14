@@ -24,11 +24,7 @@
     cursor:pointer;
     color: #001a1a;
 }
-#menuLogoMadeiraLegal {
-    height: 50px;
-    margin-bottom: -23px;
-}
-#menuLogoIbama {
+#menuLogoMadeiraLegal, #menuLogoIbama {
     height: 50px;
     margin-bottom: -20px;
 }
@@ -71,7 +67,6 @@ input {
     font-size:70px;
     color: LemonChiffon;
     background: rgba(0,0,0,.22);
-    
 }
 #indexSubtitle {
     margin-top: 80px;  
@@ -81,7 +76,7 @@ input {
     background: rgba(0,0,0,.2);
     margin-left: 20px;
 }
-#indexButtonEncode, #indexButtonDecode{
+.indexButtons {
     float: left;
     font-size:25px;
     padding: 5px 15px 5px 15px;
@@ -89,26 +84,14 @@ input {
     border-color: #ccffe6;
     border-radius: 12px;
     margin-bottom: 50px;
-}
-#indexButtonEncode {
     margin-left: 15px;
 }
-#indexButtonDecode {
-    margin-left: 15px;
-}
-#indexButtonEncode:hover {
+.indexButtons:hover{
     background-color: #9fdfbf;
     cursor:pointer;
     color: #001a1a;
 }
-#indexButtonDecode:hover {
-    background-color: #9fdfbf;
-    cursor:pointer;
-    color: #001a1a;
-}
-#indexFooter {
-    clear:left;
-}
+
 
 /*ENCODE.HTML */
 #bodyEncode {
@@ -258,59 +241,19 @@ input {
     width: 35%;
     margin-left: 5px;
 }
-#aboutExplanation1 {
+.aboutExplanation {
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
-    padding:10px 10px 0px 10px;
     margin-left: 20px;
     margin-right: 20px;
-}
-#aboutExplanation2 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px
-}
-#aboutExplanation3 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#aboutExplanation4 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:10px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#aboutExplanation5 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 10px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding:0px 15px 0px 15px;
 }
 #aboutImageOnTheRightSide{
     max-width: 35%;
-    margin-top: 5px;
+    margin-top: 12px;
     margin-bottom: 0;
     margin-left: 5px;
 }
@@ -337,7 +280,7 @@ input {
     text-decoration: none;
     color: sienna;
 } 
-#dofExplanation1 {
+#dofExplanation1, #dofExplanation2, #dofExplanation3 {
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
@@ -348,30 +291,14 @@ input {
     margin-right: 20px;
 }
 #dofExplanation2 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size:11pt;
-    margin-top: -25px;
-
+    margin-top: -40px;
 }
 #dofExplanation3 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: -12px;
 }
 #dofImageOnTheRightSide {
-    max-height:566px;
+    max-height:557px;
 }
 
 
@@ -395,67 +322,17 @@ input {
     background: rgba(255,255,255,.85);
     margin-bottom: 40px;    
 }
-#servicesExplanation1 {
+.servicesExplanation {
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 50px;
     font-weight: 600;
-    padding:10px 10px 0px 10px;
+    padding:0px 15px 0px 15px;
     margin-left: 20px;
     margin-right: 20px;
 }
-#servicesExplanation2 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px
-}
-#servicesExplanation3 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#servicesExplanation4 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#servicesExplanation5 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    font-weight: 600;
-    padding:0px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#servicesExplanation6 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    font-weight: 600;
-    padding:0px 10px 0px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: -10px;
-}
-#servicesEncodeButton {
+#servicesEncodeButton, #servicesDecodeButton {
     float: left;
     font-size:15px;
     padding: 4px;
@@ -468,85 +345,41 @@ input {
     margin-bottom: 22px;
 }
 #servicesDecodeButton{
-    float: left;
     margin-left: 35px;
     margin-top: -23px;
-    margin-bottom:12px;
-    font-size:15px;
-    padding: 4px;
-    background-color: #001a1a;
-    border-radius: 12px;
-    border-color: #001a1a;
-    color:burlywood;
 }
-#servicesEncodeButton:hover {
-    background-color: #9fdfbf;
-    cursor:pointer;
-    color: #001a1a;
-}
-#servicesDecodeButton:hover {
+#servicesEncodeButton:hover, #servicesDecodeButton:hover {
     background-color: #9fdfbf;
     cursor:pointer;
     color: #001a1a;
 }
 
+
 /* CONTATO.HTML */
 #bodyContact {
     background-image:    url(images/bgContact.jpg);
 }
-#contactExplanation1 {
+#contactExplanation1,#contactExplanation2,#contactExplanation3 {
     margin-left: 15px;
-    margin-top: 90px;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
-    font-weight: 600;
+    font-weight: 500;
     padding:10px;
 }  
-#contactFirstDiv {
-    background: rgba(255,255,255,.85);
-    height:105px;
-    width: 640px;
-    margin-left: 25%;
+#contactExplanation1 {
+    margin-top: 90px;
 }
-#contactFirstDiv:hover {
-    background: powderblue;
-}
-#contactExplanation2 {
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    font-weight: 600;
-    margin-left: 15px;
-    padding:10px;
-}
-#contactSecondDiv {
+#contactFirstDiv,#contactSecondDiv,#contactThirdDiv {
     background: rgba(255,255,255,.85);
     height:130px;
     width: 640px;
-    margin-left: 25%;
+    margin-left: 28%;
 }
-#contactSecondDiv:hover {
-    background: powderblue;
+#contactFirstDiv{
+    height: 105px;
 }
-#contactExplanation3 {
-    left: 50px;
-    width: 720px;
-    line-height: 1.8;
-    text-align: justify;
-    text-justify: inter-word;
-    font-weight: 600;
-    margin-left: 15px;
-    padding:10px;
-}
-#contactThirdDiv {
-    background: rgba(255,255,255,.85);
-    height:130px;
-    width: 640px;
-    margin-left: 25%;
-    margin-bottom: 50px;
-}
-#contactThirdDiv:hover {
+#contactFirstDiv:hover, #contactSecondDiv:hover, #contactThirdDiv:hover{
     background: powderblue;
 }
 .contactLinkToURLs{
