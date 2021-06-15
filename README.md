@@ -15,4 +15,3 @@
   Laís Mune. 
   Desenvolvedora e Idealizadora do Madeira Legal.
 
-# Como instalar o Madeira Legal
